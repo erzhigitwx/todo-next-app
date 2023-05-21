@@ -1,0 +1,77 @@
+.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 100px;
+}
+
+.active-todo__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.active-todos__empty {
+    text-align: center;
+}
+.active-todos__empty>span{
+    font-size: 14px;
+}
+
+.active-todo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 100px;
+    grid-auto-rows: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active-todo__item {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-bottom: 1px solid #000;
+    overflow-x: auto;
+}
+
+.active-todo__button {
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    background: darkorange;
+    border: 1px dotted darkorange;
+    font-size: 20px;
+    font-weight: 900;
+    transition: all 0.2s ease;
+}
+
+.active-todo__button:hover {
+    background: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
+
+@media screen and (max-width: 1000px) {
+    .active {
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .active-todo {
+        gap: 20px;
+    }
+
+    .active-todos__empty {
+        font-size: 32px;
+    }
+
+    .active-todo__button {
+        width: 100px;
+    }
+}

@@ -1,0 +1,11 @@
+.main-title {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 580px) {
+    .main-title{
+        padding: 100px 0;
+        font-size: 32px;
+    }
+  }

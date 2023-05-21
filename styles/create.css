@@ -1,0 +1,41 @@
+.create {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 0 100px;
+}
+
+.create-input {
+    all: unset;
+    border-bottom: 1px solid #000000;
+    padding: 4px 6px;
+    font-size: 16px;
+    font-weight: 200;
+    width: 100%;
+}
+
+.create-button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background: darkorange;
+    border: 1px dotted darkorange;
+    font-size: 20px;
+    font-weight: 900;
+    transition: all 0.2s ease;
+}
+
+.create-button:hover {
+    background: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
+
+@media screen and (max-width: 580px){
+    .create{
+        padding: 100px 20px 0;
+        gap: 20px;
+    }
+  }
+  

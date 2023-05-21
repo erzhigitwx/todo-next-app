@@ -1,0 +1,77 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-size: 20px;
+  font-style: normal;
+  list-style: 180%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 50px 200px;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: cadetblue;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: azure;
+  border-radius: 20px;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.1s ease-in;
+}
+
+.header-link:hover {
+  color: blue;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    padding: 0;
+  }
+
+  .header {
+    padding: 20px 20px;
+  }
+}
